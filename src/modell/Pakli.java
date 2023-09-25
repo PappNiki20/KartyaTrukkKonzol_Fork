@@ -11,7 +11,7 @@ public class Pakli {
         this.feltolt();
     }
     
-    public void feltolt() {
+    private void feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
         int i = 1;
@@ -61,7 +61,7 @@ public class Pakli {
         this.pakli = ujPakli;
     }
     
-    public void ezVolt() {
+    private void ezVolt() {
      kiir.kiirva("A választott lap: " + pakli[11]);
           kiir.kiirva("");
     }
