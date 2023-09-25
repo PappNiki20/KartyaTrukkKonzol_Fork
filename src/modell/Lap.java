@@ -1,8 +1,6 @@
 
 package modell;
 
-import nezet.KartyaTrukkKonzolon;
-
 public class Lap {
     private String leiras;
   

@@ -22,11 +22,11 @@ public class KartyaTrukkKonzolon {
         for (int i = 0; i < 3; i++) {
             paklik.kirak();
             int oszlop = melyik();
-            paklik.kever(oszlop);           
+           //paklik.kever(oszlop);           
             
             //kever(oszlop);
         }
-        paklik.eVolt();
+        //paklik.eVolt();
         //ezVolt();
 
     }
