@@ -1,8 +1,11 @@
 
-package kartyatrukkkonzolon;
+package modell;
+
+import nezet.KartyaTrukkKonzolon;
+
 public class Lap {
     private String leiras;
-     
+  
     public Lap(String leiras) {
         this.leiras = leiras;
     }

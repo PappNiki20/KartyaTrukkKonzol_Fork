@@ -1,8 +1,11 @@
 
-package kartyatrukkkonzolon;
+package modell;
+
+import nezet.KartyaTrukkKonzolon;
 
 public class Pakli {
     String[] pakli = new String[22];
+       KartyaTrukkKonzolon kiir = new KartyaTrukkKonzolon();
   
     public Pakli() {
         feltolt();
@@ -26,9 +29,10 @@ public class Pakli {
     }
    public void kirak() {
         for (int i = 1; i < pakli.length; i++) {
-            System.out.printf("%-8s", pakli[i]);
+           
+            kiir.kiirva(String.format("%-8s", pakli[i]));
             if (i % 3 == 0) {
-                System.out.println("");
+               kiir.kiirva("\n");
             }
         }
     }
@@ -60,6 +64,7 @@ public class Pakli {
         pakli = ujPakli;
     }
    public void eVolt() {
-          System.out.println("A választott lap: " + pakli[11]);
+          kiir.kiirva("A választott lap: " + pakli[11]);
+          kiir.kiirva("");
     }
 }
